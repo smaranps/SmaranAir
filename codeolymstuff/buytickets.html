@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <title>Book Your Trip</title>
+</head>
+<body style="background-image: url(data:image/jpeg;base64,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); background-size: cover;">
+    <nav class="navbar navbar-inverse">
+        <ul class="nav navbar-nav">
+            <li><img width="50px"  height="50px" src="image-removebg-preview (6).png"><span style="margin-right: 350px; color: white; font-family: cursive;">Smaran Air</span></li>
+        <li><a href="index.html" style="font-size: 20px;">🏠</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="buytickets.html">Book your Tickets</a></li>
+        <li><a href="fleet.html">Our Fleet</a></li>
+        <li><a href="">Destinations</a></li>
+        
+        </ul>
+        <form class="navbar-form">
+        <div class="form-group">
+            <input type="text" placeholder="Search..." class="form-control">
+            <button class="btn btn-success">🔍</button>
+            &nbsp;
+            &nbsp;
+          
+            <a class="btn btn-info" href="loggedindex.html">Login to MySmaran Air</a>
+                </div>
+               
+                
+            </form>
+            </nav>
+            <div class="container bg-info" style="padding: 10px; border: 4px solid black;">
+                <h2 class="text-center" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Trip filter:</h2>
+                <form class="form-inline" onsubmit="submitted(); return false">
+                    <div class="form-group">
+                Starting point:  <input class="form-control" type="text" placeholder="Starting point" required>
+              </div>
+              <br>
+              <br>
+              <div class="form-group">
+                Destination: <input class="form-control" type="text" placeholder="Destination" required>
+              </div>
+              <br>
+              <br>
+            Departure:  <input class="form-control" type="date" placeholder="from" required>  &nbsp;&nbsp;&nbsp; Return: <input class="form-control" type="date" placeholder="End" required>
+            <br>
+            <br>
+            <br>
+            <h3>Trip Information:</h3>
+            <br>
+            Passengers (Adults 13+): <input class="form-control" type="number" placeholder="Adult Passengers" required> &nbsp; &nbsp; &nbsp;  Passengers (Kids: 1-12): <input class="form-control" type="number" placeholder="Kids" required>
+            <br>
+            <h4>Roundtrip or Oneway?</h4>
+             <br>
+             <input type="radio" name="trip">Roundtrip
+             &nbsp; &nbsp; &nbsp;
+             <input type="radio" name="trip">Oneway
+             <br>
+             <h4>Class:</h4>
+            
+             <input type="radio" name="class">Economy class
+                          &nbsp; &nbsp; &nbsp;
+             <input type="radio" name="class">Business class
+             &nbsp;&nbsp;&nbsp;
+             <input type="radio" name="class">First class
+             <br>
+             <br>
+             Payment:<select required>
+                <option value="CC">Credit card</option>
+                <option value="DC">Debit card</option>
+                <option value="ET">E-transfer</option>
+                <option value="BA">Cheque</option>
+            
+            </select>
+            <br>
+            <br>
+             <button class="btn btn-info" style="margin-left: 100px;">Search Flights</button>
+             <br>
+             <br>
+             <br>
+             <span style="color: red;" id="flg"> Searching flights...</span>
+             <br>
+             <br>
+             <br>
+            </form>
+            </div>
+        
+</body>
+<script>
+    function submitted(){
+        document.getElementById("flg").innerHTML="Here are a list of flights:"+'<br/>'+'- Smaran Air flight 472 Boeing-747:                                        $978'+'<br/>'+'- Smaran Air flight 82 Airbus-A380:                                        $998'+'<br/>'+'- Smaran Air flight 6782 Boeing-737:                                        $625'
+        +'<br/>'+'- Smaran Air flight 420 Airbus A340:                                        $842'
+       
+       
+       
+       
+    
+    }
+    
+</script>
+</html>
